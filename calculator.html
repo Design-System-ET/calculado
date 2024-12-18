@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="source.js" defer></script>
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <div id="Principal" class="marcoPrincipal">
+
+        <div class="titulo">
+            <h1>DS - Calculadora</h1>
+        </div>
+
+        <hr style="margin-top: 20px;">
+
+        <div id="Display" class="visor">
+                <p id="dis">0</p>
+        </div>
+
+        <div id="Teclado">
+
+            <div id="Linea1" class="linea1">
+                <button class="boton_C" onclick="borrar()">C</button>
+                <button class="boton_fun2" onclick="">%</button>
+                <button class="boton_fun2"><<</button>
+                <button class="boton_fun" onclick="operacion('/')">/</button>
+            </div>
+
+
+            <div id="Linea2" class="linea1">
+                <button class="boton" onclick="escribir(7)">7</button>
+                <button class="boton" onclick="escribir(8)">8</button>
+                <button class="boton" onclick="escribir(9)">9</button>
+                <button class="boton_fun" onclick="operacion('*')">*</button>
+            </div>
+
+            <div id="Linea3" class="linea1">
+                <button class="boton" onclick="escribir(4)">4</button>
+                <button class="boton" onclick="escribir(5)">5</button>
+                <button class="boton" onclick="escribir(6)">6</button>
+                <button class="boton_fun" onclick="operacion('-')">-</button>
+            </div>
+
+            <div id="Linea4" class="linea1">
+                <button class="boton" onclick="escribir(1)">1</button>
+                <button class="boton" onclick="escribir(2)">2</button>
+                <button class="boton" onclick="escribir(3)">3</button>
+                <button class="boton_fun" onclick="operacion('+')">+</button>
+            </div>
+
+            <div id="Linea4" class="linea1">
+                <button class="boton">+/-</button>
+                <button class="boton" onclick="escribir(0)">0</button>
+                <button class="boton" onclick="escribir('.')">.</button>
+                <button class="boton_resultado" onclick="resultado()">=</button>
+            </div>
+
+        </div>
+
+        <hr style="margin-top: 20px;">
+
+    </div>
+    
+</body>
+</html>
